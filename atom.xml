@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-07T13:52:44.381Z</updated>
+  <updated>2022-03-08T14:30:48.148Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统总结</title>
+    <link href="http://example.com/2022/03/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://example.com/2022/03/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</id>
+    <published>2022-03-08T14:30:00.000Z</published>
+    <updated>2022-03-08T14:30:48.148Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h1><h2 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h2><h3 id="进程的概念和特征"><a href="#进程的概念和特征" class="headerlink" title="进程的概念和特征"></a>进程的概念和特征</h3><h4 id="进程的概念"><a href="#进程的概念" class="headerlink" title="进程的概念"></a>进程的概念</h4><p>进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位</p><p>进程控制块（Process Control Block）描述进程的基本信息和运行状态，所谓的创建进程和撤销进程，都是指对 PCB 的操作。</p><p>进程实体 = 程序段 + 相关数据段 + PCB</p><h3 id="进程的状态与切换"><a href="#进程的状态与切换" class="headerlink" title="进程的状态与切换"></a>进程的状态与切换</h3><ol><li>创建态：进程正在被创建，尚未转到就绪态</li><li>就绪态：进程获得了除处理机外的一切所有资源，一旦得到处理机，便可直接运行。就绪队列</li><li>运行态：进程正在处理其上运行</li><li>阻塞态：进程正在等待某一事件而暂停运行，如等待某资源为可用或等待输入/输出完成，即使处理机空闲，该进程也不能运行</li><li>结束态：进程正从系统消失，可能是进程正常结束或其他原因中断退出运行。</li></ol><p><img src="https://s2.loli.net/2022/03/08/roQUj1Dh7zvC5ET.png" alt="image.png"></p><p><img src="https://s2.loli.net/2022/03/08/em1HKahDiExluYG.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;进程管理&quot;&gt;&lt;a href=&quot;#进程管理&quot; class=&quot;headerlink&quot; title=&quot;进程管理&quot;&gt;&lt;/a&gt;进程管理&lt;/h1&gt;&lt;h2 id=&quot;进程与线程&quot;&gt;&lt;a href=&quot;#进程与线程&quot; class=&quot;headerlink&quot; title=&quot;进程与线程&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="计算机基础" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络总结</title>
