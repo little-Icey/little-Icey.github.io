@@ -48,7 +48,7 @@
 <meta property="og:image" content="https://s2.loli.net/2022/03/20/mZONGtDX7kJsRTh.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/20/lcDyWkNQumagMRi.png">
 <meta property="article:published_time" content="2022-03-07T13:42:00.000Z">
-<meta property="article:modified_time" content="2022-03-20T08:14:34.197Z">
+<meta property="article:modified_time" content="2022-03-20T08:20:38.062Z">
 <meta property="article:author" content="1c3y">
 <meta property="article:tag" content="计算机基础">
 <meta name="twitter:card" content="summary_large_image">
@@ -572,18 +572,11 @@
 <h3 id="TCP可靠传输"><a href="#TCP可靠传输" class="headerlink" title="TCP可靠传输"></a>TCP可靠传输</h3><h4 id="1-序号"><a href="#1-序号" class="headerlink" title="1.序号"></a>1.序号</h4><p>TCP将数据视为一个<span class="label label-primary">无结构但有序的字节流</span>，序号建立在传送的字节流上，而不建立在报文段之上。<br><img src="https://s2.loli.net/2022/03/20/jqD57N1npbBrRVA.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="2-确认"><a href="#2-确认" class="headerlink" title="2.确认"></a>2.确认</h4><p>确认号是期望收到对方的下一个报文段的数据的第一个字节的序号<br>TCP默认使用累计确认，只确认数据流中第一个丢失字节为止的字节</p>
 <h4 id="3-重传"><a href="#3-重传" class="headerlink" title="3.重传"></a>3.重传</h4><ol>
-<li>超时</li>
+<li><p>超时<br>一个报文段从发送再到接收到确认所经过的时间称为往返时间 RTT，加权平均往返时间 RTTs 计算如下：<br><img src="https://latex.codecogs.com/gif.latex?RTTs=(1-a)*(RTTs)+a*RTT" srcset="/img/loading.gif" lazyload><br>其中，0 ≤ a ＜ 1，RTTs 随着 a 的增加更容易受到 RTT 的影响。<br>超时时间 RTO 应该略大于 RTTs，TCP 使用的超时时间计算如下：<br><img src="https://latex.codecogs.com/gif.latex?RTO=RTTs+4*RTT_d" srcset="/img/loading.gif" lazyload><br>其中 RTTd 为偏差的加权平均值。</p>
+</li>
+<li><p>冗余ACK<br>冗余ACK就是再次确认某个报文段的ACK，而发送方先前已经收到过该报文段的确认。<br>例如，发送方A发送了序号为1、2、3、4、5的TCP报文段，其中2号在链路中丢失；3、4、5到达B，但它们不是B所期望的下一个报文，于是B就发送3个对1号报文段的冗余ACK，表示自己期望收到2号报文的</p>
+</li>
 </ol>
-<p>一个报文段从发送再到接收到确认所经过的时间称为往返时间 RTT，加权平均往返时间 RTTs 计算如下：</p>
-<p><img src="https://latex.codecogs.com/gif.latex?RTTs=(1-a)*(RTTs)+a*RTT" srcset="/img/loading.gif" lazyload></p>
-<p>其中，0 ≤ a ＜ 1，RTTs 随着 a 的增加更容易受到 RTT 的影响。<br>超时时间 RTO 应该略大于 RTTs，TCP 使用的超时时间计算如下：</p>
-<p><img src="https://latex.codecogs.com/gif.latex?RTO=RTTs+4*RTT_d" srcset="/img/loading.gif" lazyload></p>
-<p>其中 RTTd 为偏差的加权平均值。</p>
-<ol start="2">
-<li>冗余ACK</li>
-</ol>
-<p>冗余ACK就是再次确认某个报文段的ACK，而发送方先前已经收到过该报文段的确认。</p>
-<p>例如，发送方A发送了序号为1、2、3、4、5的TCP报文段，其中2号在链路中丢失；3、4、5到达B，但它们不是B所期望的下一个报文，于是B就发送3个对1号报文段的冗余ACK，表示自己期望收到2号报文的</p>
 <h3 id="TCP流量控制"><a href="#TCP流量控制" class="headerlink" title="TCP流量控制"></a>TCP流量控制</h3><p>TCP提供流量控制服务来消除发送方使接收方缓存区溢出的可能性，TCP提供一种基于滑动窗口协议的流量控制机制。</p>
 <p>接收方根据接收缓存的大小，动态调整发送方的发送窗口大小：<span class="label label-primary">接收窗口rwnd</span></p>
 <p>发送方根据对网络拥塞程序的估计确定<span class="label label-primary">拥塞窗口cwnd</span></p>
