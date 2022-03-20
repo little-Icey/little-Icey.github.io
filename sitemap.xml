@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/07/23/sqli-labs%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
-    
-    <lastmod>2021-07-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/03/31/BUUOJ%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2021-05-28</lastmod>
@@ -159,13 +152,6 @@
   
   <url>
     <loc>http://example.com/tags/how2heap/</loc>
-    <lastmod>2022-03-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/SQLi/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
