@@ -47,8 +47,9 @@
 <meta property="og:image" content="https://latex.codecogs.com/gif.latex?RTO=RTTs+4*RTT_d">
 <meta property="og:image" content="https://s2.loli.net/2022/03/20/mZONGtDX7kJsRTh.png">
 <meta property="og:image" content="https://s2.loli.net/2022/03/20/lcDyWkNQumagMRi.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/24/AHv4V6MQIWJxy2l.png">
 <meta property="article:published_time" content="2022-03-07T13:42:00.000Z">
-<meta property="article:modified_time" content="2022-03-24T03:22:29.934Z">
+<meta property="article:modified_time" content="2022-03-24T09:12:35.680Z">
 <meta property="article:author" content="1c3y">
 <meta property="article:tag" content="计算机基础">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +224,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      7.6k 字
+      7.9k 字
     </span>
   
 
@@ -232,7 +233,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      63 分钟
+      67 分钟
     </span>
   
 
@@ -614,7 +615,22 @@
 </li>
 </ol>
 <p><img src="https://s2.loli.net/2022/03/20/lcDyWkNQumagMRi.png" srcset="/img/loading.gif" lazyload></p>
-
+<h1 id="四、网络层"><a href="#四、网络层" class="headerlink" title="四、网络层"></a>四、网络层</h1><h2 id="网络层的功能"><a href="#网络层的功能" class="headerlink" title="网络层的功能"></a>网络层的功能</h2><h3 id="异构网络互联"><a href="#异构网络互联" class="headerlink" title="异构网络互联"></a>异构网络互联</h3><p>异构指的物理层和数据链路层不同</p>
+<p>在路由器互联的多个局域网的结构中，要求每个局域网物理层、数据链路、网络层可以不同，但网络层其上必须相同；因为路由器为第3层设备，向传输层以上层次隐藏下层的具体实现。</p>
+<p>将两个以上的计算机网络通过一定的方法，用一种或多种通信处理设备（中间设备）相互连接起来，以构成更大的网络系统：</p>
+<ol>
+<li>物理层中继系统：中继器、集线器（Hub）</li>
+<li>数据链路层：网桥或交换机</li>
+<li>网络层：路由器（router）</li>
+<li>网络层以上：网关</li>
+</ol>
+<p>使用IP协议，可以把异构的物理网络连接起来，使得在网络层看起来好像一个统一的网络：<br><img src="https://s2.loli.net/2022/03/24/AHv4V6MQIWJxy2l.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="路由与转发"><a href="#路由与转发" class="headerlink" title="路由与转发"></a>路由与转发</h3><p>路由器主要完成两个功能：</p>
+<ol>
+<li>路由选择：根据特定的路由选择协议，构造出路由表，同时经常或定期地和相邻路由器交换路由信息而不断地更新和维护路由表</li>
+<li>分组转发：路由器根据转发表将用户的IP数据报从合适的端口转发出去</li>
+</ol>
+<h2 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h2>
             </div>
             <hr>
             <div>
