@@ -137,14 +137,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/SCU/</loc>
+    <loc>http://example.com/tags/how2heap/</loc>
     <lastmod>2022-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/how2heap/</loc>
+    <loc>http://example.com/tags/SCU/</loc>
     <lastmod>2022-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
